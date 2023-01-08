@@ -7,7 +7,8 @@ let newTodoList = []
 todoInput.addEventListener('submit', handleSubmit)
 
 
-function handleSubmit () {
+function handleSubmit (event) {
+    event.preventDefault()
     const todoList = todoInputInput.value;
     todoInputInput.value = "";
     const matchList = {
