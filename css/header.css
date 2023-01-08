@@ -1,0 +1,89 @@
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0,0,0,0.7);
+    width: 100vw;
+    height: 120px;
+    box-sizing: border-box;
+    position : fixed;
+}
+
+
+
+
+
+.header--info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width:36%;
+    padding : 10px 10px 10px 30px;
+    box-sizing: border-box;
+}
+
+.header--info__time {
+    font-size : 25px;
+    color:white;
+    padding-bottom: 9px;
+}
+.header--info__weather {
+    font-size: 15px;
+    color:white;
+    padding-bottom : 9px;
+}
+
+.header--info__quote {
+    font-size: 15px;
+    color:white;
+
+}
+
+.header--about-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32%;
+    padding :10px;
+    font-size: 25px;
+    color: white;
+    box-sizing: border-box;
+
+}
+
+.header--todo-list {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    font-size: 25px;
+    color:white;
+    padding :10px 30px 10px 10px;
+    width: 32%;
+    box-sizing: border-box;
+
+}
+
+@media (max-width : 650px) {
+    .header--info {
+        width: 40%;
+    }
+    .header--info__time {
+        font-size : 15px;
+    }
+    .header--info__weather {
+        font-size:10px;
+    }
+    .header--info__quote {
+        font-size : 10px;
+    }
+    .header--about-me {
+        font-size : 15px;
+        width: 30%;
+    }
+    .header--todo-list {
+        font-size : 15px;
+        width: 30%;
+    }
+}

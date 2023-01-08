@@ -1,0 +1,146 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    padding-top : 120px;
+    width: 100vw;
+    height: 200vh;
+    background-color: rgba(0,0,0,0.2);
+    box-sizing: border-box;
+}
+
+.main--input {
+    padding : 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.main--input__title {
+    font-size: 35px;
+    color: white;
+    font-weight: 800;
+    margin-bottom : 30px;
+    box-sizing: border-box;
+}
+
+.main--input__input input {
+    width: 310px;
+    height: 25px;
+    border-radius: 10px;
+    border : none;
+}
+
+.main--input__input input::placeholder {
+    text-align: center;
+    font-size : 15px;
+}
+
+.main-sayhello {
+    transform:translateY(-30px);
+    display: flex;
+    font-size : 35px;
+    color : white;
+    font-weight: 800;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding : 30px;
+}
+
+.main-todolist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color : white;
+    width: 100%;
+    padding : 10px 30px;
+    box-sizing: border-box;
+}
+
+.footer {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding : 30px;
+    box-sizing: border-box;
+    font-size: 25px;
+    color : white;
+    position: fixed;
+    bottom : 0px;
+    width: 100%;
+}
+
+.main-todo-input {
+    padding-top : 10px;
+    padding-bottom : 10px;
+
+}
+
+.main-todo-input__input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 310px;
+    height: 25px;
+    border-radius: 10px;
+    border : none;
+    text-align: center;
+    font-size: 15px;
+}
+
+
+.main--todolists {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    width: 70%;
+}
+
+.main--todolists__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    font-size : 20px;
+    color : white;
+    padding : 10px
+}
+
+.button {
+    margin-left : 5px;
+    display: flex;
+    width : 19px;
+    height: 19px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    border : none;
+    color : white;
+    background-color: rgba(255,255,255,0.3);
+    cursor : pointer;
+}
+@media (max-width : 650px) {
+    .footer {
+        font-size : 15px;
+    }
+    .main--input__input input {
+        width: 220px;
+        height: 25px;
+        border-radius: 10px;
+        border : none;
+    }
+    .main--input__title {
+        font-size : 25px;
+    }
+    .main-todo-input__input {
+        width:220px;
+    }
+}

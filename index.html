@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parkee's World</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <span class="header--info">
+            <span class="header--info__time">Jan.8th 00:00</span>
+            <span class="header--info__weather">Seoul. 16c Mist</span>
+            <span class="header--info__quote">Don't worry be happy</span>
+        </span>
+        <span class="header--about-me"><a href="#">About Me</a></span>
+        <span class="header--todo-list"><a href="#">Todo List</a></span>
+    </header>
+    <main class="main">
+        <div class="main--input">
+            <span class="main--input__title">What's your name?</span>
+            <form class="main--input__input">
+                <input class="main--input__input__input" required maxlength="15" type="text" placeholder="Please write your name"> 
+            </form>
+        </div>
+        <div class="main-sayhello hidden">Hello parkee</div>
+        <div class="main-todolist hidden">What will you do?</div>
+        <form class="main-todo-input hidden">
+            <input class="main-todo-input__input" type="text" placeholder="Write your to-do-list"></form>
+        <div class="main--todolists">
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-thisis">This is Parkee's World</div>
+    </footer>
+</body>
+</html>
+<script src="js/input.js"></script>
+<script src="js/clock.js"></script>
+<script src="js/quote.js"></script>
+<script src="js/background.js"></script>
+<script src="js/todo.js"></script>
+<script src="js/weather.js"></script>
+<script src="https://kit.fontawesome.com/5a9ca86929.js" crossorigin="anonymous"></script>
+
